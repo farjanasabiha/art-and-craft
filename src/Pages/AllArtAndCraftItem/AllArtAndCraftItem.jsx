@@ -6,7 +6,7 @@ const AllArtAndCraftItem = () => {
   return (
     <div className="bg-white pb-24">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-semibold text-center mx-auto py-10">All Art And Craft Item</h1>
+        <h1 className="text-3xl font-semibold text-center mx-auto py-10">Lets See All Art And Craft Item</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {allLists.map((allList, index) => (
             <ArtAndCraftCard allList={allList} key={index}></ArtAndCraftCard>
