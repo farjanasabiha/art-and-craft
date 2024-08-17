@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css"; // Import the Tailwind CSS file
+import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./ErrorPage/ErrorPage.jsx";
 import Layout from "./Layout/Layout.jsx";
@@ -14,6 +14,7 @@ import AuthProvider from "./provider/AuthProvider.jsx";
 import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 import Blog from "./Pages/Blog/Blog.jsx";
 import UpdatePage from "./Pages/UpdatePage/UpdatePage.jsx";
+import ViewDetailsPage from "./Pages/ViewDetailsPage/ViewDetailsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -67,7 +68,14 @@ const router = createBrowserRouter([
       {
         path: "updatePage/:id",
         element: <UpdatePage></UpdatePage>,
-        loader: ({ params }) => fetch(`http://localhost:5000/list/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/list/${params.id}`),
+      },
+
+      {
+        path: "viewDetailsPage",
+        element: <ViewDetailsPage></ViewDetailsPage>,
+        loader: () => fetch("http://localhost:5000/list"),
       },
     ],
   },

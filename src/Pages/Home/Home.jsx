@@ -9,6 +9,7 @@ import { useLoaderData } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import { Bounce } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
+import ChallengeCategory from "../../Components/ChallengeCategory/ChallengeCategory";
 const Home = () => {
   const blogs = useLoaderData();
 
@@ -206,7 +207,6 @@ const Home = () => {
           </div>
 
           <Slide triggerOnce>
-
             <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
               <img
                 src="https://i.ibb.co/SySjw2W/istockphoto-1195874341-612x612.jpg"
@@ -237,6 +237,44 @@ const Home = () => {
           </Slide>
         </section>
       </div>
+
+      <div className="container mx-auto mb-24">
+        <section className="text-gray-600 body-font">
+          <div className="">
+            <div className="text-center mb-20">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                 Art And Craft Category Section
+              </h1>
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+                Art and craft represent a beautiful intersection of creativity,
+                and tradition. While art typically focuses on expression,
+                emotion,craft emphasizes the skilled creation of functional or
+                decorative objects.
+              </p>
+              <div className="flex mt-6 justify-center">
+                <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              className="grid grid-cols-1 gap-x-14 gap-y-4 md:grid-cols-2 lg:grid-cols-3 "
+            >
+              {blogs.map((blog, index) => (
+                <ChallengeCategory blog={blog} key={index}></ChallengeCategory>
+              ))}
+            </div>
+            <div id="clickable">
+              <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                Button
+              </button>
+            </div>
+            <Tooltip anchorSelect="#clickable" clickable>
+              <p>Click me</p>
+            </Tooltip>
+          </div>
+        </section>
+      </div>
+
       <div className="container mx-auto mb-24">
         <section className="text-gray-600 body-font">
           <div className="">
