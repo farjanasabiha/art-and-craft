@@ -11,22 +11,23 @@ const ChallengeCategory = ({blog}) => {
         rating,
       } = blog;
     return (
-      <div>
-        <div className="card bg-base-100 image-full w-96 shadow-xl">
+      <a href="">
+        <div className="card bg-base-100 image-full shadow-xl">
           <figure>
             <img src={image_url} alt="Shoes" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-white">{subCategory_name}</h2>
+            <h2 className="card-title text-white mb-3">{subCategory_name}</h2>
             <p className="text-white">{short_description}</p>
-            <p className="text-white">{item_name}</p>
-            <div className="card-actions justify-end">
+            <p className="text-white">Item Name : {item_name}</p>
+            <p className="text-white">Customization : {customization}</p>
+            <div className="flex  justify-between items-center">
               <p className="text-white">Price : {price}</p>
               <p className="text-white">Rating : {rating}</p>
             </div>
           </div>
         </div>
-      </div>
+      </a>
     );
 };
 

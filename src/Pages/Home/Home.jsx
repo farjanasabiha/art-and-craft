@@ -238,7 +238,7 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="container mx-auto mb-24">
+      <div className="container mx-auto mb-24 px-8 lg:px-36">
         <section className="text-gray-600 body-font">
           <div className="">
             <div className="text-center mb-20">
@@ -257,7 +257,7 @@ const Home = () => {
             </div>
             <div
               data-aos="fade-up"
-              className="grid grid-cols-1 gap-x-14 gap-y-4 md:grid-cols-2 lg:grid-cols-3 "
+              className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-16"
             >
               {blogs.map((blog, index) => (
                 <ChallengeCategory blog={blog} key={index}></ChallengeCategory>
