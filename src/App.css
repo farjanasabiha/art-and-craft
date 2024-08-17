@@ -1,0 +1,35 @@
+.navContainer {
+  position: relative;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  color: #4b85f0;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navContainer:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
