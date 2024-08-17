@@ -51,171 +51,173 @@ const AddCraftItem = () => {
       });
   };
   return (
-    <div className="container p-6 mx-auto space-y-8">
-      <h1 className="text-2xl font-semibold text-center">
-        Add Your Art And Craft Item
-      </h1>
+    <div className=" h-full bg-white">
+      <div className="container p-6 mx-auto space-y-8">
+        <h1 className="text-2xl font-semibold text-center">
+          Add Your Art And Craft Item
+        </h1>
 
-      <div className="">
-        <div className="hero-content text-center mx-auto">
-          <div className="card bg-base-100 w-full  shadow-2xl">
-            <form
-              onSubmit={handleItem}
-              className="card-body grid grid-cols-1 md:grid-cols-2 gap-x-10"
-            >
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium">
-                    Photo URL
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="photo"
-                  placeholder="Photo URL"
-                  className="input input-bordered text-sm"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium">
-                    Item Name
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="item_name"
-                  placeholder="Item Name"
-                  className="input input-bordered text-sm"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium">
-                    SubCategory Name
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="subCategory_name"
-                  placeholder="SubCategory Name"
-                  className="input input-bordered text-sm"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium">
-                    Short description
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="short_description"
-                  placeholder="Short description"
-                  className="input input-bordered text-sm"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium">
-                    Price
-                  </span>
-                </label>
-                <input
-                  type="number"
-                  name="price"
-                  placeholder="Price"
-                  className="input input-bordered text-sm"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium">
-                    Rating
-                  </span>
-                </label>
-                <input
-                  type="number"
-                  name="rating"
-                  placeholder="Rating"
-                  className="input input-bordered text-sm"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium capitalize">
-                    customization
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="customization"
-                  placeholder="customization"
-                  className="input input-bordered text-sm capitalize"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium capitalize">
-                    processing time
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="processing_time"
-                  placeholder="processing time"
-                  className="input input-bordered text-sm capitalize"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium capitalize">
-                    stock Status
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="stockStatus"
-                  placeholder="stock Status"
-                  className="input input-bordered text-sm capitalize"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium capitalize">
-                    user email
-                  </span>
-                </label>
-                <input
-                  type="email"
-                  name="user_email"
-                  placeholder="user email"
-                  className="input input-bordered text-sm capitalize"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-base font-medium capitalize">
-                    user name
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  name="user_name"
-                  placeholder="user name"
-                  className="input input-bordered text-sm capitalize"
-                  required
-                />
-              </div>
-              <div className="form-control mt-6">
-                <input
-                  type="submit"
-                  value="add"
-                  className="btn btn-primary"
-                ></input>
-              </div>
-            </form>
+        <div className="">
+          <div className="hero-content text-center mx-auto">
+            <div className="card bg-base-100 w-full  shadow-2xl">
+              <form
+                onSubmit={handleItem}
+                className="card-body grid grid-cols-1 md:grid-cols-2 gap-x-10"
+              >
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium">
+                      Photo URL
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="photo"
+                    placeholder="Photo URL"
+                    className="input input-bordered text-sm"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium">
+                      Item Name
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="item_name"
+                    placeholder="Item Name"
+                    className="input input-bordered text-sm"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium">
+                      SubCategory Name
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="subCategory_name"
+                    placeholder="SubCategory Name"
+                    className="input input-bordered text-sm"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium">
+                      Short description
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="short_description"
+                    placeholder="Short description"
+                    className="input input-bordered text-sm"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium">
+                      Price
+                    </span>
+                  </label>
+                  <input
+                    type="number"
+                    name="price"
+                    placeholder="Price"
+                    className="input input-bordered text-sm"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium">
+                      Rating
+                    </span>
+                  </label>
+                  <input
+                    type="number"
+                    name="rating"
+                    placeholder="Rating"
+                    className="input input-bordered text-sm"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium capitalize">
+                      customization
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="customization"
+                    placeholder="customization"
+                    className="input input-bordered text-sm capitalize"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium capitalize">
+                      processing time
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="processing_time"
+                    placeholder="processing time"
+                    className="input input-bordered text-sm capitalize"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium capitalize">
+                      stock Status
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="stockStatus"
+                    placeholder="stock Status"
+                    className="input input-bordered text-sm capitalize"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium capitalize">
+                      user email
+                    </span>
+                  </label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    placeholder="user email"
+                    className="input input-bordered text-sm capitalize"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-base font-medium capitalize">
+                      user name
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    name="user_name"
+                    placeholder="user name"
+                    className="input input-bordered text-sm capitalize"
+                    required
+                  />
+                </div>
+                <div className="form-control mt-6">
+                  <input
+                    type="submit"
+                    value="add"
+                    className="btn btn-primary"
+                  ></input>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

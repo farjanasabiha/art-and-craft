@@ -15,9 +15,12 @@ const ArtAndCraftCard = ({ allList }) => {
   return (
     <section>
       <div className="container px-6 m-auto shadow-lg rounded-md">
-        <div className="grid grid-cols-4 gap-8 md:grid-cols-8 lg:grid-cols-12 py-6 ">
+        <div className="grid grid-cols-4 gap-8 lg:grid-cols-12 py-6 ">
           <div className="col-span-4">
-            <img className="w-full h-full" src={image_url}></img>
+            <img
+              className="w-full h-full"
+              src="https://i.ibb.co/HdcrrSw/71k-LFw-W1kw-L.jpg"
+            ></img>
           </div>
           <div className="col-span-4 lg:col-span-8 flex items-start justify-center flex-col">
             <div className="">
