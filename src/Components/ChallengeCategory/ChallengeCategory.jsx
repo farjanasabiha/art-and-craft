@@ -21,7 +21,8 @@ const ChallengeCategory = ({blog}) => {
             <p className="text-white">{short_description}</p>
             <p className="text-white">{item_name}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+              <p className="text-white">Price : {price}</p>
+              <p className="text-white">Rating : {rating}</p>
             </div>
           </div>
         </div>
