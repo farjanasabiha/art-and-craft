@@ -48,7 +48,6 @@ const Register = () => {
         Swal.fire("User created Successfully");
 
         // Update Profile
-
         updateProfile(result.user, {
           displayName: name,
           photoURL: "https://example.com/jane-q-user/profile.jpg",
@@ -57,11 +56,6 @@ const Register = () => {
             console.log("Profile Updated");
           })
           .catch();
-
-        // Send Varification email
-        // sendEmailVerification(result.user).then(() => {
-        //   Swal.fire("Please check your email and verify your account");
-        // });
       })
       .catch((error) => {
         console.error(error);
