@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { Zoom } from "react-awesome-reveal";
 const ChallengeCategory = ({blog}) => {
 
       const {
@@ -12,7 +12,8 @@ const ChallengeCategory = ({blog}) => {
         price,
         rating,
       } = blog;
-    return (
+  return (
+    <Zoom>
       <Link to={`/ChallangeCategoryPage/${id}`}>
         <div className="card bg-base-100 image-full shadow-xl">
           <figure>
@@ -30,7 +31,8 @@ const ChallengeCategory = ({blog}) => {
           </div>
         </div>
       </Link>
-    );
+    </Zoom>
+  );
 };
 
 export default ChallengeCategory;

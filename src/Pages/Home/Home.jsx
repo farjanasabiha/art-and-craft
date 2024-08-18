@@ -8,13 +8,10 @@ import ArtCategories from "../../Components/ArtCategories/ArtCategories";
 import { useLoaderData } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import { Bounce } from "react-awesome-reveal";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Roll } from "react-awesome-reveal";
 import ChallengeCategory from "../../Components/ChallengeCategory/ChallengeCategory";
 const Home = () => {
   const blogs = useLoaderData();
-
-
-
   return (
     <div>
       {/* Swiper Slider Here */}
@@ -169,13 +166,13 @@ const Home = () => {
       {/* Art and craft Categories */}
 
       <div>
-        <section className="py-6 sm:py-12 bg-white text-white dark:bg-black dark:text-wite">
-          <div className="container p-6 mx-auto space-y-8">
+        <section className="bg-white text-white dark:bg-black dark:text-wite  pt-10 lg:pt-24 px-8">
+          <div className="container mx-auto ">
             <div className="space-y-2 text-center">
-              <h2 className="text-4xl font-bold text-black mb-5">
+              <h2 className="text-xl md:text-4xl font-bold text-black mb-5 dark:text-white">
                 Lets Book your Property
               </h2>
-              <p className="font-serif text-sm text-gray-700">
+              <p className="font-serif text-sm text-gray-700 dark:text-white">
                 Renting a property involves leasing a residential or commercial
                 space from a landlord for a specified period.
               </p>
@@ -194,20 +191,20 @@ const Home = () => {
 
       {/* Gallery Section */}
 
-      <div className="container mx-auto mb-24">
-        <section className="">
+      <div className=" bg-white text-white dark:bg-black dark:text-wite  pt-10 lg:pt-24 px-5">
+        <section className="container mx-auto">
           <div className="space-y-2 text-center mb-5">
-            <h2 className="text-4xl font-bold text-black mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-black mb-4 dark:text-white">
               Lets Explore My Art And Crafts
             </h2>
-            <p className="font-serif text-sm text-gray-700">
+            <p className="font-serif text-sm text-gray-700 dark:text-white pb-8 pt-3">
               Renting a property involves leasing a residential or commercial
               space from a landlord for a specified period.
             </p>
           </div>
 
           <Slide triggerOnce>
-            <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
+            <div className="container grid grid-cols-2 gap-4 mx-auto md:grid-cols-4">
               <img
                 src="https://i.ibb.co/SySjw2W/istockphoto-1195874341-612x612.jpg"
                 alt=""
@@ -238,14 +235,14 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="container mx-auto mb-24 px-8 lg:px-36">
-        <section className="text-gray-600 body-font">
+      <div className=" bg-white text-white dark:bg-black dark:text-wite  pt-10 lg:pt-24 px-5">
+        <section className="text-gray-600 body-font container mx-auto px-4 lg:px-36">
           <div className="">
             <div className="text-center mb-20">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                 Art And Craft Category Section
+              <h1 className="text-xl md:text-4xl  dark:text-white font-bold  text-gray-900 mb-4">
+                Art And Craft Category Section
               </h1>
-              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+              <p className="text-base leading-relaxed dark:text-white xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
                 Art and craft represent a beautiful intersection of creativity,
                 and tradition. While art typically focuses on expression,
                 emotion,craft emphasizes the skilled creation of functional or
@@ -257,7 +254,7 @@ const Home = () => {
             </div>
             <div
               data-aos="fade-up"
-              className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-16"
+              className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
               {blogs.map((blog, index) => (
                 <ChallengeCategory blog={blog} key={index}></ChallengeCategory>
@@ -275,14 +272,14 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="container mx-auto mb-24">
-        <section className="text-gray-600 body-font">
+      <div className="bg-white text-white dark:bg-black dark:text-wite py-10 lg:py-24 px-8">
+        <section className="text-gray-600 body-font container mx-auto">
           <div className="">
             <div className="text-center mb-20">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+              <h1 className="text-xl md:text-4xl  font-bold title-font text-gray-900 dark:text-white mb-4">
                 More About Art And Craft
               </h1>
-              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 dark:text-white">
                 Art and craft represent a beautiful intersection of creativity,
                 and tradition. While art typically focuses on expression,
                 emotion,craft emphasizes the skilled creation of functional or
@@ -294,123 +291,130 @@ const Home = () => {
             </div>
             <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
               <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-                <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-semibold mb-3">
-                    Creativity and Expression
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Both art and craft allow individuals to express creativity
-                    and convey emotions, ideas, and stories through various
-                    mediums.
-                  </p>
-                  <a className="mt-3 text-indigo-500 inline-flex items-center">
-                    Learn More
+                <Roll>
+                  <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100  text-indigo-500 mb-5 flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      className="w-4 h-4 ml-2"
+                      className="w-10 h-10"
                       viewBox="0 0 24 24"
                     >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
-                  </a>
-                </div>
+                  </div>
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 dark:text-white text-lg title-font font-semibold mb-3">
+                      Creativity and Expression
+                    </h2>
+                    <p className="leading-relaxed dark:text-white text-base">
+                      Both art and craft allow individuals to express creativity
+                      and convey emotions, ideas, and stories through various
+                      mediums.
+                    </p>
+                    <a className="mt-3 dark:text-white text-indigo-500 inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </Roll>
               </div>
               <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-                <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="6" cy="6" r="3"></circle>
-                    <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    Skill and Technique:
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Craft emphasizes the mastery of techniques and skills, often
-                    requiring precision and patience to create functional or
-                    decorative objects.
-                  </p>
-                  <a className="mt-3 text-indigo-500 inline-flex items-center">
-                    Learn More
+                <Roll>
+                  <div className="w-20 h-20 inline-flex items-center justify-center  rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      className="w-4 h-4 ml-2"
+                      className="w-10 h-10"
                       viewBox="0 0 24 24"
                     >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                     </svg>
-                  </a>
-                </div>
+                  </div>
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 dark:text-white text-lg title-font font-medium mb-3">
+                      Skill and Technique:
+                    </h2>
+                    <p className="leading-relaxed text-base dark:text-white">
+                      Craft emphasizes the mastery of techniques and skills,
+                      often requiring precision and patience to create
+                      functional or decorative objects.
+                    </p>
+                    <a className="mt-3 dark:text-white text-indigo-500 inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </Roll>
               </div>
+
               <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-                <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    Tradition and Culture
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Many crafts are rooted in cultural traditions, passed down
-                    through generations, preserving heritage and history
-                  </p>
-                  <a className="mt-3 text-indigo-500 inline-flex items-center">
-                    Learn More
+                <Roll>
+                  <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      className="w-4 h-4 ml-2"
+                      className="w-10 h-10"
                       viewBox="0 0 24 24"
                     >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                  </a>
-                </div>
+                  </div>
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 dark:text-white text-lg title-font font-medium mb-3">
+                      Tradition and Culture
+                    </h2>
+                    <p className="leading-relaxed text-base dark:text-white">
+                      Many crafts are rooted in cultural traditions, passed down
+                      through generations, preserving heritage and history
+                    </p>
+                    <a className="mt-3 dark:text-white text-indigo-500 inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </Roll>
               </div>
             </div>
             <div id="clickable">
