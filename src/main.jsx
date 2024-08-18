@@ -15,6 +15,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 import Blog from "./Pages/Blog/Blog.jsx";
 import UpdatePage from "./Pages/UpdatePage/UpdatePage.jsx";
 import ViewDetailsPage from "./Pages/ViewDetailsPage/ViewDetailsPage.jsx";
+import ChallangeCategoryPage from "./Pages/ChallangeCategoryPage/ChallangeCategoryPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
         path: "viewDetailsPage",
         element: <ViewDetailsPage></ViewDetailsPage>,
         loader: () => fetch("http://localhost:5000/list"),
+      },
+      {
+        path: "/ChallangeCategoryPage/:id",
+        element: <ChallangeCategoryPage></ChallangeCategoryPage>,
       },
     ],
   },

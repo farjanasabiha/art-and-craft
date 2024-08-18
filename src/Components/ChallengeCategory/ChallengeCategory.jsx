@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ChallengeCategory = ({blog}) => {
 
       const {
@@ -11,7 +13,7 @@ const ChallengeCategory = ({blog}) => {
         rating,
       } = blog;
     return (
-      <a href="">
+      <Link to={`/ChallangeCategoryPage/${id}`}>
         <div className="card bg-base-100 image-full shadow-xl">
           <figure>
             <img src={image_url} alt="Shoes" />
@@ -27,7 +29,7 @@ const ChallengeCategory = ({blog}) => {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     );
 };
 

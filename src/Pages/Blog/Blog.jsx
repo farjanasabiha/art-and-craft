@@ -61,13 +61,6 @@ const Blog = () => {
                     <span className="font-semibold">StockStatus:</span> {' '}
                     {data.stockStatus}
                   </div>
-                  <div className="flex items-center justify-center gap-2 capitalize">
-                    {data.facilities &&
-                      data.facilities.length > 0 &&
-                      data.facilities.map((facility, index) => (
-                        <p key={index}>{facility}</p>
-                      ))}
-                  </div>
                 </div>
               </div>
             </div>
