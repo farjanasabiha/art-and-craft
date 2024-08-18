@@ -74,7 +74,7 @@ const Register = () => {
       <div className="container mx-auto">
         <form
           onSubmit={handleRegister}
-          className="flex items-center justify-center flex-col py-28"
+          className="flex items-center justify-center flex-col py-32"
         >
           <h1 className="text-2xl md:text-4xl font-semibold text-[#4b85f0] mb-8">
             Please Register Here !
