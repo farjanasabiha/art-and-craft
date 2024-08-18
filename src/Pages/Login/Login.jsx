@@ -52,9 +52,9 @@ const Login = () => {
   };
 
   return (
-    <div className=" bg-white">
+    <div className=" bg-white dark:bg-black">
       <div className="container mx-auto">
-        <div className="flex items-center justify-center flex-col py-28">
+        <div className="flex items-center justify-center flex-col py-10 md:py-28">
           <h1 className="text-xl md:text-4xl font-semibold text-[#4b85f0] mb-8">
             Please Login Here !
           </h1>
@@ -114,24 +114,24 @@ const Login = () => {
               type="submit"
               value="LogIn"
             ></input>
-            <div className="flex w-full flex-col md:flex-row items-center justify-between gap-3">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-3">
               <button
                 onClick={handleGoogleLogin}
                 href="/login"
-                className="btn  px-8 bg-[#4b85f0] text-white transition duration-300 font-normal text-base hover:bg-transparent hover:text-[#4b85f0] hover:border-solid hover:border-[#4b85f0]"
+                className="btn  bg-[#4b85f0] text-white transition duration-300 font-normal text-base hover:bg-transparent hover:text-[#4b85f0] hover:border-solid hover:border-[#4b85f0]"
               >
                 Login with Google
               </button>
               <button
                 onClick={handleGithubLogin}
                 href="/login"
-                className="btn  px-8 bg-[#4b85f0] text-white transition duration-300 font-normal text-base hover:bg-transparent hover:text-[#4b85f0] hover:border-solid hover:border-[#4b85f0]"
+                className="btn bg-[#4b85f0] text-white transition duration-300 font-normal text-base hover:bg-transparent hover:text-[#4b85f0] hover:border-solid hover:border-[#4b85f0]"
               >
                 Login with Github
               </button>
             </div>
 
-            <p className="text-black font-medium text-sm text-center">
+            <p className="text-black dark:text-white font-medium text-sm text-center">
               New Here? Please{" "}
               <a href="/register" className="text-[#4b85f0] font-semibold">
                 Register !

@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 const MyArtAndCraftCard = ({ allAddedList, list, setList }) => {
   const {
     _id,
-    image_url,
+    photo,
     subCategory_name,
     item_name,
     user_name,
@@ -59,8 +59,8 @@ const MyArtAndCraftCard = ({ allAddedList, list, setList }) => {
           <div className="shadow-lg my-10 rounded-md dark:border-2 dark:border-gray-500">
             <img
               className="w-full h-full rounded-md"
-              src={image_url}
-              alt={item_name}
+              src={photo}
+              alt="Photo"
             ></img>
             <div className="p-7 ">
               <p className=" font-medium leading-snug text-black dark:text-gray-200">
