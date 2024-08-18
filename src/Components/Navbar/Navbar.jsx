@@ -36,8 +36,9 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li className="bg-white hover:bg-transparent focus:bg-transparent rounded-none">
-        <NavLink className="dark:text-white"
+      <li className="bg-white rounded-lg hover:bg-transparent focus:bg-transparent ml-5">
+        <NavLink
+          className="dark:text-white"
           to="/"
           style={({ isActive }) => {
             return {
@@ -51,7 +52,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="bg-transparent hover:bg-transparent focus:bg-transparent rounded-none">
+      <li className="bg-white rounded-lg hover:bg-transparent focus:bg-transparent ml-5">
         <NavLink
           to="/AllArtAndCraftItem"
           style={({ isActive }) => {
@@ -66,7 +67,7 @@ const Navbar = () => {
           All Art & Craft Item
         </NavLink>
       </li>
-      <li className="bg-transparent hover:bg-transparent focus:bg-transparent rounded-none">
+      <li className="bg-white  rounded-lg bg-transparent hover:bg-transparent focus:bg-transparent  ml-5">
         <NavLink
           to="/AddCraftItem"
           style={({ isActive }) => {
@@ -81,7 +82,7 @@ const Navbar = () => {
           Add Craft Item
         </NavLink>
       </li>
-      <li className="bg-transparent hover:bg-transparent focus:bg-transparent rounded-none">
+      <li className="bg-white  rounded-lg bg-transparent hover:bg-transparent focus:bg-transparent  ml-5">
         <NavLink
           to="/MyArtAndCraftList"
           style={({ isActive }) => {
@@ -127,7 +128,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content dark:text-white bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content dark:text-white bg-base-100 rounded-box mr-5 z-[1] mt-3 w-52 p-2 shadow"
               >
                 {links}
               </ul>
