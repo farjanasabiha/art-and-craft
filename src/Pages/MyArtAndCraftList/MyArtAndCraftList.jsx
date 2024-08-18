@@ -20,7 +20,7 @@ const MyArtAndCraftList = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-black">
       <div className="container mx-auto">
         <div className="mx-auto text-center">
           <h1 className="text-3xl font-bold pt-5 mb-3">
@@ -29,7 +29,7 @@ const MyArtAndCraftList = () => {
           <div className="mt-5">
             <select
               onChange={filter}
-              className="select select-bordered w-full max-w-xs border border-[#4885f8] text-[#4885f8] hover:bg-[#4885f8] hover:text-white"
+              className="select select-bordered w-full max-w-xs border bg-transparent border-[#4885f8] text-[#4885f8] hover:bg-[#4885f8] hover:text-white"
               defaultValue=""
             >
               <option disabled value="">
@@ -43,7 +43,7 @@ const MyArtAndCraftList = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
           {filterData.map((filteredList) => (
-            <MyArtAndCraftCard
+            <MyArtAndCraftCard className=""
               allAddedList={filteredList}
               key={filteredList._id}
               list={filterData}

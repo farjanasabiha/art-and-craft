@@ -69,9 +69,9 @@ const UpdatePage = () => {
       });
   };
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-black">
       <div className="container py-14 mx-auto space-y-8">
-        <h1 className="text-2xl font-semibold text-center">
+        <h1 className="text-2xl text-black dark:text-white font-semibold text-center">
           Update Your Art And Craft Item
         </h1>
 
@@ -93,7 +93,7 @@ const UpdatePage = () => {
                     type="text"
                     name="image_url"
                     placeholder="Photo URL"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm text-white"
                     required
                   />
                 </div>
@@ -108,7 +108,7 @@ const UpdatePage = () => {
                     type="text"
                     name="item_name"
                     placeholder="Item Name"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm text-white"
                     required
                   />
                 </div>
@@ -123,7 +123,7 @@ const UpdatePage = () => {
                     defaultValue={subCategory_name}
                     name="subCategory_name"
                     placeholder="SubCategory Name"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm text-white text-white"
                     required
                   />
                 </div>
@@ -138,7 +138,7 @@ const UpdatePage = () => {
                     defaultValue={short_description}
                     name="short_description"
                     placeholder="Short description"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm text-white text-white"
                     required
                   />
                 </div>
@@ -153,7 +153,7 @@ const UpdatePage = () => {
                     defaultValue={price}
                     name="price"
                     placeholder="Price"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm text-white text-white"
                     required
                   />
                 </div>
@@ -168,7 +168,7 @@ const UpdatePage = () => {
                     defaultValue={rating}
                     name="rating"
                     placeholder="Rating"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm text-white text-white text-white"
                     required
                   />
                 </div>
@@ -183,7 +183,7 @@ const UpdatePage = () => {
                     defaultValue={customization}
                     name="customization"
                     placeholder="customization"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm text-white text-white capitalize"
                     required
                   />
                 </div>
@@ -198,7 +198,7 @@ const UpdatePage = () => {
                     name="processing_time"
                     defaultValue={processing_time}
                     placeholder="processing time"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm text-white text-white capitalize"
                     required
                   />
                 </div>
@@ -213,7 +213,7 @@ const UpdatePage = () => {
                     name="stockStatus"
                     defaultValue={stockStatus}
                     placeholder="stock Status"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm text-white text-white capitalize"
                     required
                   />
                 </div>
@@ -228,7 +228,7 @@ const UpdatePage = () => {
                     defaultValue={user_email}
                     name="user_email"
                     placeholder="user email"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm text-white text-white capitalize"
                     required
                   />
                 </div>
@@ -243,7 +243,7 @@ const UpdatePage = () => {
                     name="user_name"
                     defaultValue={user_name}
                     placeholder="user name"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm text-white text-white capitalize"
                     required
                   />
                 </div>

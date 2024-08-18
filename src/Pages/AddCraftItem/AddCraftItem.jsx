@@ -51,22 +51,22 @@ const AddCraftItem = () => {
       });
   };
   return (
-    <div className=" h-full bg-white">
+    <div className=" h-full bg-white dark:bg-black">
       <div className="container p-6 mx-auto space-y-8">
-        <h1 className="text-2xl font-semibold text-center">
+        <h1 className="text-2xl text-black dark:text-white font-semibold text-center">
           Add Your Art And Craft Item
         </h1>
 
-        <div className="">
+        <div className="dark:border-[1px] dark:border-gray-200 rounded-xl">
           <div className="hero-content text-center mx-auto">
-            <div className="card bg-base-100 w-full  shadow-2xl">
+            <div className="card w-full shadow-2xl">
               <form
                 onSubmit={handleItem}
                 className="card-body grid grid-cols-1 md:grid-cols-2 gap-x-10"
               >
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium">
+                    <span className="label-text text-base font-bold">
                       Photo URL
                     </span>
                   </label>
@@ -74,12 +74,12 @@ const AddCraftItem = () => {
                     type="text"
                     name="photo"
                     placeholder="Photo URL"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm bg-gray-200"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium">
+                    <span className="label-text text-base font-semibold">
                       Item Name
                     </span>
                   </label>
@@ -87,12 +87,12 @@ const AddCraftItem = () => {
                     type="text"
                     name="item_name"
                     placeholder="Item Name"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm bg-gray-200"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium">
+                    <span className="label-text text-base font-semibold">
                       SubCategory Name
                     </span>
                   </label>
@@ -100,12 +100,12 @@ const AddCraftItem = () => {
                     type="text"
                     name="subCategory_name"
                     placeholder="SubCategory Name"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm bg-gray-200"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium">
+                    <span className="label-text text-base font-semibold">
                       Short description
                     </span>
                   </label>
@@ -113,12 +113,12 @@ const AddCraftItem = () => {
                     type="text"
                     name="short_description"
                     placeholder="Short description"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm bg-gray-200"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium">
+                    <span className="label-text text-base font-semibold">
                       Price
                     </span>
                   </label>
@@ -126,12 +126,12 @@ const AddCraftItem = () => {
                     type="number"
                     name="price"
                     placeholder="Price"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm bg-gray-200"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium">
+                    <span className="label-text text-base font-semibold">
                       Rating
                     </span>
                   </label>
@@ -139,12 +139,12 @@ const AddCraftItem = () => {
                     type="number"
                     name="rating"
                     placeholder="Rating"
-                    className="input input-bordered text-sm"
+                    className="input input-bordered text-sm bg-gray-200"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium capitalize">
+                    <span className="label-text text-base font-semibold capitalize">
                       customization
                     </span>
                   </label>
@@ -152,12 +152,12 @@ const AddCraftItem = () => {
                     type="text"
                     name="customization"
                     placeholder="customization"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm bg-gray-200 capitalize"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium capitalize">
+                    <span className="label-text text-base font-semibold capitalize">
                       processing time
                     </span>
                   </label>
@@ -165,12 +165,12 @@ const AddCraftItem = () => {
                     type="text"
                     name="processing_time"
                     placeholder="processing time"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm bg-gray-200 capitalize"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium capitalize">
+                    <span className="label-text text-base font-semibold capitalize">
                       stock Status
                     </span>
                   </label>
@@ -178,12 +178,12 @@ const AddCraftItem = () => {
                     type="text"
                     name="stockStatus"
                     placeholder="stock Status"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm bg-gray-200 capitalize"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium capitalize">
+                    <span className="label-text text-base font-semibold capitalize">
                       user email
                     </span>
                   </label>
@@ -191,13 +191,13 @@ const AddCraftItem = () => {
                     type="email"
                     name="user_email"
                     placeholder="user email"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm bg-gray-200 capitalize"
                     required
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-base font-medium capitalize">
+                    <span className="label-text text-base font-semibold capitalize">
                       user name
                     </span>
                   </label>
@@ -205,7 +205,7 @@ const AddCraftItem = () => {
                     type="text"
                     name="user_name"
                     placeholder="user name"
-                    className="input input-bordered text-sm capitalize"
+                    className="input input-bordered text-sm bg-gray-200 capitalize"
                     required
                   />
                 </div>

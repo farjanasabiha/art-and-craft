@@ -56,58 +56,58 @@ const MyArtAndCraftCard = ({ allAddedList, list, setList }) => {
     <div>
       <section>
         <div className="container px-6 m-auto ">
-          <div className="shadow-lg my-10 rounded-md">
+          <div className="shadow-lg my-10 rounded-md dark:border-2 dark:border-gray-500">
             <img
               className="w-full h-full rounded-md"
               src={image_url}
               alt={item_name}
             ></img>
-            <div className="p-7">
-              <p className=" text-black font-medium leading-snug">
+            <div className="p-7 ">
+              <p className=" font-medium leading-snug text-black dark:text-gray-200">
                 <span className="font-semibold">SubCategory Name :</span>{" "}
-                <span className="underline text-base font-medium text-black  rounded-xl  capitalize">
+                <span className="underline text-base font-medium   rounded-xl  capitalize">
                   {subCategory_name}
                 </span>
               </p>
-              <p className="font-bold text-black mt-3">
+              <p className="font-bold text-black dark:text-gray-200 mt-3">
                 Short Description :{" "}
-                <span className="font-medium text-black  rounded-xl  capitalize">
+                <span className="font-medium text-black dark:text-gray-200 rounded-xl  capitalize">
                   {short_description}
                 </span>
               </p>
               <div className="flex  flex-wrap font-bold justify-start gap-5  space-x-2 text-xs text-black">
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">User Name :</span> {user_name}
                 </p>
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">User Email :</span>{" "}
                   {user_email}
                 </p>
               </div>
               <div className="flex  flex-wrap font-bold justify-start gap-5  space-x-2 text-xs text-black">
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">Price :</span> {price}
                 </p>
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">Rating :</span> {rating}
                 </p>
               </div>
               <div className="flex  flex-wrap font-bold justify-start gap-5  space-x-2 text-xs text-black">
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">Item Name :</span> {item_name}
                 </p>
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">Processing time :</span>{" "}
                   {processing_time}
                 </p>
               </div>
 
               <div className="flex flex-wrap font-bold justify-start gap-5  space-x-2 text-xs text-black">
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">Customization :</span>{" "}
                   {customization}
                 </p>
-                <p className=" text-black py-2 text-sm font-medium leading-snug">
+                <p className=" text-black dark:text-gray-200 py-2 text-sm font-medium leading-snug">
                   <span className="font-semibold">Stock Status :</span>{" "}
                   {stockStatus}
                 </p>
