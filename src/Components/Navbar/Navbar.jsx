@@ -104,7 +104,7 @@ const Navbar = () => {
     <div className="shadow-md bg-white dark:bg-black">
       {(theme, toggleTheme)}
       <div className="container mx-auto bg-white dark:bg-white">
-        <div className="navbar bg-white dark:bg-black mx-auto  py-3">
+        <div className="navbar bg-white dark:bg-black mx-auto py-3">
           <div className="navbar-start w-[40%] md:w-full">
             <div className="dropdown">
               <div
