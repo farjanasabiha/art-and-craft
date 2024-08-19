@@ -31,7 +31,8 @@ const router = createBrowserRouter([
       {
         path: "/AllArtAndCraftItem",
         element: <AllArtAndCraftItem></AllArtAndCraftItem>,
-        loader: () => fetch("http://localhost:5000/list"),
+        loader: () =>
+          fetch("https://art-and-craft-server-lovat.vercel.app/list"),
       },
       {
         path: "/AddCraftItem",
@@ -48,7 +49,8 @@ const router = createBrowserRouter([
             <MyArtAndCraftList></MyArtAndCraftList>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/list"),
+        loader: () =>
+          fetch("https://art-and-craft-server-lovat.vercel.app/list"),
       },
       {
         path: "/blog/:id",
@@ -70,13 +72,16 @@ const router = createBrowserRouter([
         path: "updatePage/:id",
         element: <UpdatePage></UpdatePage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/list/${params.id}`),
+          fetch(
+            `https://art-and-craft-server-lovat.vercel.app/list/${params.id}`
+          ),
       },
 
       {
         path: "viewDetailsPage",
         element: <ViewDetailsPage></ViewDetailsPage>,
-        loader: () => fetch("http://localhost:5000/list"),
+        loader: () =>
+          fetch("https://art-and-craft-server-lovat.vercel.app/list"),
       },
       {
         path: "/ChallangeCategoryPage/:id",

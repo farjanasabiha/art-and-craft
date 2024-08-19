@@ -11,7 +11,7 @@ const Login = () => {
 
   const [swalProps, setSwalProps] = useState({});
   const [showPassword, setShowPassword] = useState(true);
-//   const [registerError, setRegisterError] = useState("");
+  //   const [registerError, setRegisterError] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();

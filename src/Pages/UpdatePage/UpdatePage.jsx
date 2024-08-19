@@ -48,7 +48,7 @@ const UpdatePage = () => {
     console.log(newList);
 
     // send Data to the server
-    fetch(`http://localhost:5000/list/${_id}`, {
+    fetch(`https://art-and-craft-server-lovat.vercel.app/list/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

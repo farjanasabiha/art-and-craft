@@ -30,7 +30,7 @@ const AddCraftItem = () => {
     console.log(newList);
 
     // send Data to the server
-    fetch("http://localhost:5000/list", {
+    fetch("https://art-and-craft-server-lovat.vercel.app/list", {
       method: "POST",
       headers: {
         "content-type": "application/json",
